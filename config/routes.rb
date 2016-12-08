@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'cart/index'
 
-  root 'page#home'	
+  root 'page#home'
 
   get 'page/about'
 
