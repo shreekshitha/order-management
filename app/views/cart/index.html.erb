@@ -5,4 +5,17 @@
 <br><br>
 
 
+<ul>
+<% @cart.each do | id, quantity | %>
+<% product = Product.find_by_id(id) %>
+
+
+<li>
+
+<%= link_to 'product.title', product %>
+
+</li>
+
+<% end %>
+</ul>
 
