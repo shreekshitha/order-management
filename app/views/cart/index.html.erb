@@ -2,20 +2,18 @@
 
 <br>
 <%= link_to 'Empty your cart', cart_clear_path %>
-<br><br>
-
+<br>
 
 <ul>
-<% @cart.each do | id, quantity | %>
-<% product = Product.find_by_id(id) %>
 
+	<% @cart.each do | id, quantity | %>
+	<% product = Product.find_by_id(id) %> 
 
-<li>
+	<li>
 
-<%= link_to 'product.title', product %>
+		<%= link_to product.title, product %>
 
-</li>
+	</li>
 
 <% end %>
 </ul>
-
