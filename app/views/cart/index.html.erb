@@ -7,7 +7,7 @@
 <ul>
 
 	<% @cart.each do | id, quantity | %>
-	<% product = Product.find_by_id(id) %> 
+	<% product = Product.find_by(id: id) %>
 
 	<li>
 

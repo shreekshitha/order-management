@@ -10,10 +10,10 @@ class CartController < ApplicationController
   		cart = session[:cart]
     end
 
-    if cart[:id] then
-       cart[:id] = cart[:id] + 1
+    if cart[id] then
+       cart[id] = cart[id] + 1
     else
-    	cart[:id] = 1
+    	cart[id] = 1
     end
     redirect_to :action => :index
   end
