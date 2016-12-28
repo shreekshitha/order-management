@@ -20,7 +20,7 @@
 
     <div id="sign_in">
       <% if user_signed_in? %>
-      <%= link_to "Your cart", cart_path %>
+      <%= link_to "Your Cart", cart_path %>
       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
          <% else %>    
       <%= link_to "Your Cart", cart_path %>
